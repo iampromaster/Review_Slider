@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Make Slider</title>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Customer Reviews</h1>
+      <div class="review-box">
+        <div id="slide">
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic1.jpg" alt="" />
+              <div>
+                <h3>People1</h3>
+                <p>Web Designer1</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi culpa esse, ratione amet voluptatem sint
+              doloribus ipsa
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic2.jpg" alt="" />
+              <div>
+                <h3>People2</h3>
+                <p>Web Designer2</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi culpa esse, ratione amet voluptatem sint
+              doloribus ipsa
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic3.jpg" alt="" />
+              <div>
+                <h3>People3</h3>
+                <p>Web Designer3</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi culpa esse, ratione amet voluptatem sint
+              doloribus ipsa
+            </p>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="img/pic4.jpg" alt="" />
+              <div>
+                <h3>People4</h3>
+                <p>Web Designer4</p>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi culpa esse, ratione amet voluptatem sint
+              doloribus ipsa
+            </p>
+          </div>
+        </div>
+
+        <div class="siderbar">
+          <img src="img/up-arrow.png" id="upArrow" />
+          <img src="img/down-arrow.png" id="downArrow" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slide = document.getElementById("slide");
+      var upArrow = document.getElementById("upArrow");
+      var downArrow = document.getElementById("downArrow");
+
+      let x = 0;
+      downArrow.onclick = function () {
+        if (x > "-900") {
+          x = x - 300;
+          slide.style.top = x + "px";
+        }
+      };
+
+      upArrow.onclick = function () {
+        if (x < 0) {
+          x = x + 300;
+          slide.style.top = x + "px";
+        }
+      };
+    </script>
+  </body>
+</html>
